@@ -16,8 +16,8 @@
 </template>
 <style lang="less">
     @whiteColor: #ffffff;
-    @disabledColor: #E1E1E1;
-    @import '~pcadmin-base/lib/css/config.less';
+    
+    @import '~pcadmin-base/src/css/var.less';
 
     // 函数begin
     .button-default-function(@color) {
