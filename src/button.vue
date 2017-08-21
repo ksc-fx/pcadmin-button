@@ -1,15 +1,3 @@
-<!-- 调用说明
-    <button-ele @click="buttonClick">默认实心按钮</button-ele>
-    <button-ele @click="buttonClick"  :radius="false" :params="1" type="primary" color="orange" :disabled="true">橘色</button-ele>
--->
-<!-- 参数说明 -->
-<!-- 
-type: String  类型，default:实心按钮白字，primary:白底按钮字体带颜色，text:字体按钮 （默认default）
-color: String 颜色，green:绿色,red:红色,orange:橙色,blue:蓝色（默认green）
-disabled: Boolean 是否有效可点击，false:可点击，true:不可点击
-params: 点击返回的参数，给什么返回什么。没有就返回事件
-buttonClick: function 点击回调函数  必须
--->
 <template>
  <button
     class="button" __vuec__
@@ -27,13 +15,9 @@ buttonClick: function 点击回调函数  必须
 </button> 
 </template>
 <style lang="less">
-    // @import '../../assets/css/mixin';
     @whiteColor: #ffffff;
-    @greenColor: #1EC773;
-    @blueColor: #00B0E5;
-    @redColor: #FF0000;
-    @orangeColor: #FF930F;
     @disabledColor: #E1E1E1;
+    @import '~pcadmin-base/lib/css/config.less';
 
     // 函数begin
     .button-default-function(@color) {
@@ -42,7 +26,6 @@ buttonClick: function 点击回调函数  必须
         border-color: @color;
     }
     .button-primary-function(@color) {
-        background-color: @whiteColor;
         color: @color;
         border-color: @color;
     }
@@ -67,16 +50,16 @@ buttonClick: function 点击回调函数  必须
         }
         &.button-default {
             &.button-green {
-                .button-default-function(@greenColor);
+                .button-default-function(@infoColor);
             }
             &.button-blue {
-                .button-default-function(@blueColor);
+                .button-default-function(@successColor);
             }
             &.button-red {
-                .button-default-function(@redColor);
+                .button-default-function(@dangerColor);
             }
             &.button-orange {
-                .button-default-function(@orangeColor);
+                .button-default-function(@warningColor);
             }
             &.is-disabled {
                 background-color: @disabledColor;
@@ -85,16 +68,16 @@ buttonClick: function 点击回调函数  必须
         }
         &.button-primary {
             &.button-green {
-                .button-primary-function(@greenColor);
+                .button-primary-function(@infoColor);
             }
             &.button-blue {
-                .button-primary-function(@blueColor);
+                .button-primary-function(@successColor);
             }
             &.button-red {
-                .button-primary-function(@redColor);
+                .button-primary-function(@dangerColor);
             }
             &.button-orange {
-                .button-primary-function(@orangeColor);
+                .button-primary-function(@warningColor);
             }
             &.is-disabled {
                 color: @disabledColor;
@@ -105,16 +88,16 @@ buttonClick: function 点击回调函数  必须
             padding: 0px;
             border-width: 0px;
             &.button-green {
-                .button-text-function(@greenColor);
+                .button-text-function(@infoColor);
             }
             &.button-blue {
-                .button-text-function(@blueColor);
+                .button-text-function(@successColor);
             }
             &.button-red {
-                .button-text-function(@redColor);
+                .button-text-function(@dangerColor);
             }
             &.button-orange {
-                .button-text-function(@orangeColor);
+                .button-text-function(@warningColor);
             }
             &.is-disabled {
                 color: @disabledColor;
