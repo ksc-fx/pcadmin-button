@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "vue": "^2.2.2",
-    "pcadmin-base": "^1.0.0",
+    "pcadmin-base": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
