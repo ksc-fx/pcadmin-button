@@ -1,6 +1,6 @@
 {
   "name": "pcadmin-button",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "pcadmin,button组件",
   "main": "index.js",
   "scripts": {
