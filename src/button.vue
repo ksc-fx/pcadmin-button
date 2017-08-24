@@ -112,7 +112,7 @@
 </style>
 <script>
     export default{
-        name: "button",
+        name: 'button',
         props: {
             type: {
                 type: String,
@@ -124,7 +124,7 @@
             },
             radius: {
                 type: Boolean,
-                default: true,   
+                default: true
             },
             disabled: {
                 type: Boolean,
@@ -132,24 +132,24 @@
             },
             params: {
                 default: ''
-            },
-        },
-        data(){
-            return{
             }
+        },
+        data () {
+            return {
+            };
         },
         watch: {
         },
-        computed:{
+        computed: {
         },
-        mounted() {
+        mounted () {
         },
 
-        methods:{
-            handleClick(event) {
+        methods: {
+            handleClick (event) {
                 let params = this.params || event;
                 this.$emit('click', params);
             }
         }
-    }
+    };
 </script>

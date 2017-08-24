@@ -34,28 +34,26 @@
 
 <script>
 
-import buttonEle from "../src/button.vue";
+import buttonEle from '../src/button.vue';
 
 export default {
-    data(){
+    data () {
         return {
             listData: {
                 name: 'params'
             }
-        }
+        };
     },
-    mounted(){
-        
+    mounted () {
     },
-    methods:{
-        buttonClick(event) {
+    methods: {
+        buttonClick (event) {
             console.log('点击按钮');
-            alert('点击按钮');
         }
     },
     components: {
         buttonEle
     }
-}
+};
 </script>
 
