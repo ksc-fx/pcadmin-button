@@ -1,32 +1,13 @@
 <template>
-  <div>
-    <button-ele @click="buttonClick" params="paramsstring">默认按钮</button-ele>
-    <button-ele @click="buttonClick" :params="listData" type="primary">主要按钮</button-ele>
-    <button-ele @click="buttonClick" type="text">文字按钮</button-ele>
-
-    <button-ele @click="buttonClick" :radius="false" color="green">绿色</button-ele>
-    <button-ele @click="buttonClick" color="blue">蓝色</button-ele>
-    <button-ele @click="buttonClick" color="red">红色</button-ele>
-    <button-ele @click="buttonClick" color="orange">橘色</button-ele>
-    <button-ele @click="buttonClick" color="orange" :disabled="true">橘色</button-ele>
-
-    <button-ele @click="buttonClick" type="primary" color="green">绿色</button-ele>
-    <button-ele @click="buttonClick" type="primary" color="blue">蓝色</button-ele>
-    <button-ele @click="buttonClick" type="primary" color="red">红色</button-ele>
-    <button-ele @click="buttonClick" type="primary" color="orange">橘色</button-ele>
-    <button-ele @click="buttonClick" type="primary" color="orange" :disabled="true">橘色</button-ele>
-
-    <button-ele @click="buttonClick" type="text" color="green">绿色</button-ele>
-    <button-ele @click="buttonClick" type="text" color="blue">蓝色</button-ele>
-    <button-ele @click="buttonClick" type="text" color="red">红色</button-ele>
-    <button-ele @click="buttonClick" type="text" color="orange" :disabled="true">橘色</button-ele>
-    
-
-    <button-ele @click="buttonClick" :disabled="true">主要按钮</button-ele>
-    <button-ele @click="buttonClick" type="primary" :disabled="true">主要按钮</button-ele>
-    <button-ele @click="buttonClick" type="text" :disabled="true">文字按钮</button-ele>
-
-  </div>
+    <div>
+        <btn>默认按钮</btn>
+        <btn type="primary">primary</btn>
+        <btn type="info">info</btn>
+        <btn type="success">success</btn>
+        <btn type="warning">warning</btn>
+        <btn type="danger">danger</btn>
+        <btn :disabled="true">不可点击</btn>
+    </div>
 </template>
 
 <style lang="less">
@@ -34,25 +15,19 @@
 
 <script>
 
-import buttonEle from '../src/button.vue';
+import btn from '../src/button.vue';
 
 export default {
     data () {
         return {
-            listData: {
-                name: 'params'
-            }
         };
     },
     mounted () {
     },
     methods: {
-        buttonClick (event) {
-            console.log('点击按钮');
-        }
     },
     components: {
-        buttonEle
+        btn
     }
 };
 </script>
