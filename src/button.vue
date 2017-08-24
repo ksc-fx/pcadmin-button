@@ -1,6 +1,6 @@
 <template>
  <button
-    class="button" __vuec__
+    class="button"
     @click="handleClick"
     :disabled="disabled"
     :class="[
@@ -14,7 +14,7 @@
     <span><slot></slot></span>
 </button> 
 </template>
-<style lang="less">
+<style lang="less" scoped>
     @whiteColor: #ffffff;
     
     @import '~pcadmin-base/src/css/var.less';
@@ -34,7 +34,7 @@
     }
     // 函数end
 
-    .button[__vuec__] {
+    .button {
         line-height: 1;
         height: 37px;
         padding: 10px 18.5px;
