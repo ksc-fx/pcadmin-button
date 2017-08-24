@@ -18,4 +18,4 @@ import button from 'pcadmin-button';
 | 参数      | 说明          | 类型      | 是否必选                           | 可选值  | 默认值  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |-------- |
 | type | 按钮类型 | String | - | primary/info/success/warning/danger | primary |
-| disabled | 是否有效可点击 | Boolean | — | true/false | true |
+| disabled | 是否有效可点击 | Boolean | - | true/false | true |
