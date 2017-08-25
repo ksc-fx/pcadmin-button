@@ -10,6 +10,9 @@
     <span><slot></slot></span>
 </button> 
 </template>
+<style lang="less">
+    @import '~pcadmin-base/src/css/reset.less';
+</style>
 <style lang="less" scoped>
     @import '~pcadmin-base/src/css/var.less';
 
