@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
+    "pub": "cp demo/index.vue demo/index.code && npm publish",
     "lint": "eslint --ext .js,.vue src demo"
   },
   "repository": {
