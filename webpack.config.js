@@ -27,14 +27,14 @@ module.exports = {
         app: ['./demo/index.js']
     },
     output: {
-        path: path.resolve(__dirname, '../demo'),
+        path: path.resolve(__dirname, './demo'),
         publicPath: '/demo/',
         filename: 'bundle.js'
     },
     devServer: {
-        contentBase: path.resolve(__dirname, 'demo'),
-        openPage: 'index.html',
-        open: false
+        contentBase: path.resolve(__dirname, ''),
+        openPage: 'demo/index.html',
+        open: true
     },
     module: {
         rules: [
