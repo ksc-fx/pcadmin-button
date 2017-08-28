@@ -11,6 +11,7 @@
 </button> 
 </template>
 <style lang="less" scoped>
+    @ksPrefix: ks-;
     @import '~pcadmin-base/src/css/var.less';
 
     .@{ksPrefix}button {
