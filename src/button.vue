@@ -13,7 +13,7 @@
 <style lang="less" scoped>
     @import '~pcadmin-base/src/css/var.less';
 
-    .ks-button {
+    .@{ksPrefix}button {
         line-height: 1;
         height: 37px;
         padding: 10px 18.5px;
