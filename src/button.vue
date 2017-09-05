@@ -15,6 +15,7 @@
     @import '~pcadmin-base/src/css/var.less';
 
     .@{ksPrefix}button {
+        outline: 0;
         line-height: 1;
         height: 37px;
         padding: 10px 18.5px;

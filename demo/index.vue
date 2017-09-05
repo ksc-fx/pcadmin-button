@@ -11,10 +11,10 @@
 </template>
 
 <style lang="less">
+    @import '~pcadmin-base/src/css/reset.less';
 </style>
 
 <script>
-
 import btn from '../src/button.vue';
 
 export default {
